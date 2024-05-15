@@ -1,0 +1,47 @@
+@import "../../App.scss";
+
+.navbar{
+    height: 100px;
+
+    .wrapper{
+        max-width:1366px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        
+        @include mobile{
+            justify-content: flex-end;
+            padding: 20px;
+        }
+        .social{
+            display: flex;
+            gap:20px;
+            z-index: 1000;
+          img{
+            width:18px;
+            height: 18px;
+          }
+        }
+    }
+}
+
+.course{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box{
+        width:200px;
+        height:200px;
+        background-color: white;
+        
+    }
+}
+
+@include mobile{
+    .logo-design{
+        display: none;
+    }
+}
